@@ -31,17 +31,24 @@
         <h4>Try it free 7 days<span> then $20/mo. thereafter</span></h4>
         <form action="" id="form">
           <label for="firstName">
-            <input type="text" class="firstName" placeholder="First Name" />
-          </label>
+            <input type="text" class="firstName" placeholder="First Name"> 
+            </label>
+            <div id="firstName-error" class="error-message"></div>
           <label for="lastName">
             <input type="text" class="lastName" placeholder="Last Name" />
           </label>
+          <div id="lastName-error" class="error-message"></div>
           <label for="email">
             <input type="email" class="email" placeholder="Email" />
           </label>
+          <div id="email-error" class="error-message"></div>
+          <div id="passwordsect">
           <label for="password">
-            <input type="password" class="password" placeholder="Password" />
+            <input type="password" id="password" class="password" placeholder="Password" />
           </label>
+          <img src="./images/eye-slash-solid.png" onclick="pass()" class="pass-icon" id="pass-icon">
+          </div>
+          <div id="password-error" class="error-message"></div>
           <button id="button">Claim your free trial</button>
           <small
             >By clicking the button, you are agreeing to our
